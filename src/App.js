@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { data } from './data';
 
 function App() {
-  const [purchases, setPurchases] = useState(data);   //gifts-изначальное состояние, setGifts-придумали это имя,чтобы прописать его в кнопке в подслушке для изменения состояния,а именно - при клике на кнопку-удалятся все подарки
+  const [purchases, setPurchases] = useState(data);  
   //console.log(data);
   const removePurchase = (id) => {
     let newPurchases = purchases.filter(purchase => purchase.id !==id);
